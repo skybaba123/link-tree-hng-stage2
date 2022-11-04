@@ -1,0 +1,125 @@
+form {
+  width: 720px;
+  max-width: 90%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #475467;
+}
+
+input {
+  height: 44px;
+  outline: 0;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  margin-top: 8px;
+  padding-left: 1rem;
+  font-weight: 600;
+
+  &::placeholder {
+    color: dimgray;
+  }
+}
+
+.main-text {
+  margin-bottom: 30px;
+}
+
+.sub-text {
+  margin-bottom: 48px;
+}
+
+.first-last {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  div {
+    width: 48%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .first-last {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+
+    div {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.email-wrapper {
+  margin-bottom: 24px;
+  input {
+    width: 100%;
+  }
+}
+
+.message-wrapper {
+  margin-bottom: 24px;
+
+  textarea {
+    width: 100%;
+    height: 132px;
+    resize: none;
+    outline: 0;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    margin-top: 8px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-weight: 600;
+
+    &::placeholder {
+      color: dimgray;
+    }
+  }
+
+  p {
+    color: red;
+  }
+}
+
+.check-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+button {
+  background-color: #1570ef;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #175cd3;
+  }
+
+  &:focus {
+    background: #1570ef;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+  }
+
+  &:disabled {
+    background: #b2ddff;
+  }
+}

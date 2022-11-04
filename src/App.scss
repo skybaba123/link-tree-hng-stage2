@@ -1,0 +1,142 @@
+.App {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+#slack {
+  display: none;
+}
+
+.share-more {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(1rem);
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.more {
+  display: none;
+}
+
+.share {
+  display: block;
+}
+
+.profile-section {
+  gap: 10px;
+
+  h3 {
+    color: rgb(63, 63, 63);
+  }
+}
+
+.link-section {
+  gap: 24px;
+
+  a {
+    background-color: #eaecf0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 76px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.sub-text {
+  position: absolute;
+  display: flex;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 250px;
+  max-width: fit-content;
+  top: 0;
+  animation: fadeInUp;
+  animation-duration: 0.5s;
+}
+
+.social-section {
+  div {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 5rem;
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section {
+    width: 90%;
+  }
+
+  .more {
+    display: block;
+  }
+
+  .share {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 6%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
